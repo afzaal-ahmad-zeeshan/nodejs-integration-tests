@@ -24,7 +24,6 @@ describe('GET /movies', () => {
             .get('/movies')
             .end((err, res) => {
                 res.status.should.be.equal(200);
-                console.log(res.body);
                 res.body["page"].should.be.equal(1);
                 done();
             });
