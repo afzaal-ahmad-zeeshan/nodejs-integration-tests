@@ -8,14 +8,4 @@ dependencies:
   stage: build
   script:
     - npm install
-  artifacts:
-    paths:
-      - node_modules
-
-test:
-  stage: test
-  script:
     - node test.js
-  artifacts:
-    paths:
-      - node_modules/
